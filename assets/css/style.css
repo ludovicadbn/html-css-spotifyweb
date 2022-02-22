@@ -7,7 +7,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+li,
+a{
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+}
 
+/* BODY */
 .container-flex{
     display: flex;
 }
@@ -46,6 +53,41 @@ main{
     text-transform: uppercase;
     font-size: 0.5rem;
     font-weight: 700;
+}
+
+.section-menu{
+    margin-top: 20%;
+}
+
+.section-menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-menu ul li{
+    margin: 0 2% 4%;
+    text-align: center;
+}
+
+.section-menu ul li a{
+    text-transform: uppercase;
+    color: #686a70;
+    font-weight: 700;
+    font-size: 0.5rem;
+}
+
+.history{
+    width: 90%;
+    margin: 2% auto 0;
+}
+
+.history span{
+    margin: 2% 0;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9rem;
 }
 
 .player{

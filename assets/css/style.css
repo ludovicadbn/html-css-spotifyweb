@@ -322,7 +322,9 @@ main{
 .playlist,
 .side-nav-bottom span,
 .playing div:last-of-type,
-.volume i{
+.volume i,
+.home > div > div > div i,
+.overlay-hover{
     display: none;
 }
 
@@ -1068,6 +1070,41 @@ main{
         color: #fff;
         filter: unset;
     }
+
+    .home > div > div > div{
+        position: relative;
+    }
+
+    .home > div > div > div i{
+        display: unset;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .overlay{
+        display: unset;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 5px;
+        bottom: 8px;
+        left: 0;
+        right: 0;
+    }
+
+    .artists .overlay{
+        border-radius: 50%;
+    }
+
+    .overlay-hover{
+        display: unset;
+    }
+
+    /* .overlay-hover:hover{
+        display: unset;
+    } */
 
     .side-nav-top a:hover{
         border-left: 2px solid green;

@@ -30,6 +30,7 @@ i{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 .side-nav ul{
@@ -149,6 +150,10 @@ main{
     text-align: center;
 }
 
+.artists > div img{
+    border-radius: 50%;
+}
+
 .home > div div{
     color: #fff;
     font-size: 0.6rem;
@@ -180,6 +185,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 100;
 }
 
 .player-menu > div:last-of-type{
@@ -239,7 +245,6 @@ main{
     flex-basis: calc(15% - 0.6em);
     font-size: 0.5rem;
     color: #fff;
-    align-self: flex-start;
 }
 
 .player span:first-of-type{
@@ -303,4 +308,228 @@ main{
 
 .progress-bar:hover{
     background-color: green;
+}
+
+/* MOBILE DISPLAY NONE */
+.side-nav > img,
+.side-nav-top li span,
+.playlist,
+.side-nav-bottom span{
+    display: none;
+}
+
+/* MEDIA */
+@media screen and (min-width: 400px){
+    .side-nav{
+        width: 35vw;
+        justify-content: flex-start;
+    }
+
+    .side-nav > img{
+        display: unset;
+        width: 60%;
+        margin: 1em 30% 1.5em 10%;
+    }
+
+    .side-nav-top li:first-of-type{
+        display: none;
+    }
+
+    .side-nav a{
+        color: #fff;
+        font-weight: 700;
+    }
+    
+    .side-nav ul li{
+        margin: 0.3em 0;
+    }
+
+    .side-nav-top{
+        margin-bottom: 1em;
+    }
+    
+    .side-nav-top li span{
+        display: unset;
+        font-size: 0.8rem;
+    }
+
+    .side-nav-top img{
+        width: 4vw;
+        margin: 0em 0vw 0 3vw;
+        vertical-align: middle;
+    }
+
+    .playlist{
+        display: unset;
+        color: #fff;
+        width: 80%;
+        margin: 0 10% 0 3vw;
+    }
+
+    .playlist h2{
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+    }
+
+    .fa-square-plus{
+        font-size: 1.8rem;
+        color: #fff;
+        vertical-align: middle;
+    }
+
+    .playlist div:first-of-type span{
+        font-size: 0.8rem;
+        margin-left: 0.5em;
+        font-weight: 700;
+    }
+
+    .playlist-list{
+        overflow-y: scroll;
+        height: 30vh;
+        margin: 1em 0;
+    }
+
+    .playlist-list a{
+        margin: 0.2em 0;
+        font-size: 0.8rem;
+    }
+    
+    .side-nav-bottom li:first-of-type a{
+        color: #686a70;
+    }
+
+    .side-nav-bottom span{
+        display: unset;
+    }
+    
+    .side-nav-bottom img{
+        width: 4vw;
+        margin: 0 0.3em 0 3vw;
+        vertical-align: middle;
+    }
+
+    .side-nav-bottom li:last-of-type a{
+        font-size: 0.8rem;
+        border-top: 1px solid #686a70;
+        width: 80%;
+        margin: 0 10% 0 3vw;
+        padding: 1em 0;
+    }
+    
+    main{
+        width: 65vw;
+    }
+
+    .upgrade{
+        left: 35vw;
+    }
+
+    .section-menu{
+        margin-top: 18%;
+    }
+    
+    .section-menu ul li{
+        margin: 0 1.5% 4%;
+    }
+    
+    .section-menu ul li a{
+        font-size: 0.65rem;
+    }
+
+    .home{
+        width: 90%;
+        margin: 0.6em auto 0;
+    }
+    
+    .home img{
+        width: 100%;
+    }
+    
+    .home h2{
+        font-size: 1.1rem;
+    }
+    
+    .history h2{
+        margin-bottom: 1em;
+    }
+    
+    .history > div{
+        flex-basis: calc(33% - 0.6em);
+    }
+
+    .for-you > div,
+    .artists > div{
+        flex-basis: 40%;
+    }
+    
+    .home > div div{
+        font-size: 0.65rem;
+    }
+
+    .history > div span:last-of-type{
+        font-size: 0.5rem;
+    }
+    
+    .for-you span,
+    .artists span{
+        font-size: 0.65rem;
+    }
+    
+    /* .player-menu{
+        width: 100vw;
+        height: 10vh;
+        background-color: #282828;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+    } */
+    
+    .player-menu > div:last-of-type{
+        flex-basis: 20%;
+    }
+    
+    .playing{
+        flex-basis: 30%;
+    }
+    
+    .song-details span:first-of-type{
+        font-size: 1rem;
+    }
+
+    .song-details{
+        margin: 1em 1.5em 1em 0;
+    }
+    
+    .song-details span:nth-of-type(2),
+    .song-details span:last-of-type{
+        font-size: 0.55rem;
+    }
+    
+    .playing img{
+        width: 50%;
+        margin: 1em 0em 0 1.5em;
+    }
+    
+    .player{
+        flex-basis: 50%;
+    }
+
+    .fa-shuffle,
+    .fa-backward-step,
+    .fa-forward-step,
+    .fa-rotate-right,
+    .fa-list-ul,
+    .fa-tv{
+        font-size: 0.85rem;
+    }
+
+    .fa-circle-play{
+        font-size: 1.6rem;
+    }
+
+    .progress-bar{
+        width: 40%;
+    }
 }

@@ -82,31 +82,43 @@ main{
     margin: 0.6em auto 0;
 }
 
-.history{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.home img{
+    width: 100%;
 }
 
-.history h2{
+.home h2{
     text-transform: capitalize;
     color: #fff;
     font-size: 0.9rem;
     flex-basis: 100%;
 }
 
-.history > div{
-    margin: 1em 0.3em 0 0;
-    flex-basis: calc(50% - 0.3em);
+.history h2{
+    margin-bottom: 1em;
+}
+
+.history,
+.for-you,
+.artists{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.history > div,
+.for-you > div,
+.artists > div{
+    margin: 1em 0.6em 0 0;
+    flex-basis: calc(50% - 0.6em);
     text-align: center;
 }
 
-.history > div div{
+.home > div div{
     color: #fff;
     font-size: 0.6rem;
     font-weight: 700;
     text-transform: capitalize;
-    margin: 0.5em 0;
+    padding: 0.5em 0;
 }
 
 .history > div span:last-of-type{
@@ -117,8 +129,12 @@ main{
     text-transform: capitalize;
 }
 
-.history img{
-    width: 100%;
+.for-you span,
+.artists span{
+    color: #686a70;
+    font-size: 0.5rem;
+    font-weight: 700;
+    margin: 1em 0 2em;
 }
 
 .player{

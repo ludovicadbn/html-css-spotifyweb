@@ -185,88 +185,94 @@ main{
     margin: 1em 0 2em;
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 .player-menu{
     width: 100vw;
     height: 10vh;
     background-color: #282828;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.player-menu > div:nth-of-type(3){
-    flex-basis: 25%;
-    display: flex;
-    justify-content: center;
-}
-
-.player-menu > div:nth-of-type(3) i:last-of-type{
-    padding-left: 1.5em;
-}
-
-/* QUI */
 .playing{
     flex-basis: 25%;
     display: flex;
-    margin-right: 1em;
+    padding-left: 0.5em;
+    align-items: center;
+}
+
+.playing div:first-of-type{
+    flex-basis: 35%;
+}
+
+.playing img{
+    width: 70%;
+    max-width: 100%;
+}
+
+.song-details{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .song-details span:first-of-type{
     color: #fff;
     font-weight: 700;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
 }
 
 .song-details span:nth-of-type(2),
 .song-details span:last-of-type{
     color: #686a70;
-    font-size: 0.35rem;
+    font-size: 0.4rem;
     display: block;
     font-weight: 700;
 }
 
-.playing > div div:last-of-type{
-    flex-basis: 20%;
-    font-size: 0.6rem;
-}
-
-.playing i{
-    display: block;
-    font-size: 0.4rem;
-    margin-bottom: 0.5em;
-}
-
-.playing img{
-    width: 60%;
-    margin: 0.3em 0.5em;
-}
-
-.player{
-    flex-basis: 50%;
+.playing div:last-of-type{
+    flex-basis: 25%;
+    font-size: 0.7rem;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
 }
 
-/* QUI */
-.player span{
-    flex-basis: calc(15% - 0.6em);
-    font-size: 0.5rem;
-    color: #fff;
+.playing div:last-of-type i{
+    padding-bottom: 1.4em;
 }
 
-.player span:first-of-type{
-    margin-right: 0.2em;
-}
-
-.player span:last-of-type{
-    margin-left: 0.2em;
+.player{
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
 }
 
 .player > div:first-of-type{
     flex-basis: 100%;
-    margin-bottom: 0.4em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.player > div:last-of-type{
+    display: flex;
+    padding-top: 0.5em;
+}
+
+.player > div:last-of-type span{
+    font-size: 0.5rem;
+    color: #fff;
+    width: 10%;
+}
+
+.player > div:last-of-type span:first-of-type{
+    padding-right: 0.5em;
+}
+
+.player > div:last-of-type span:last-of-type{
+    padding-left: 0.5em;
 }
 
 .fa-shuffle,
@@ -275,7 +281,7 @@ main{
 .fa-rotate-right,
 .fa-list-ul,
 .fa-tv{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 
 .fa-circle-play{
@@ -284,13 +290,10 @@ main{
 
 .progress-area{
     height: 0.4em;
-    flex-basis: 70%;
-    margin: 0 auto;
+    width: 80%;
     background-color: #686a70;
     border-radius: 50px;
     cursor: pointer;
-    display: flex;
-    justify-content: space-between;
 }
 
 .progress-bar{
@@ -299,6 +302,17 @@ main{
     position: relative;
     border-radius: inherit;
     background-color: #fff;
+}
+
+.player-menu > div:nth-of-type(3){
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-menu > div:nth-of-type(3) i:last-of-type{
+    padding-top: 0.7em;
 }
 
 .progress-bar:hover:before{
@@ -317,20 +331,20 @@ main{
     background-color: green;
 }
 
-/* MOBILE DISPLAY NONE */
+/*!!!!!!!!!!!!!!! MAX-WIDTH:400PX DISPLAY NONE !!!!!!!!!!!!!!!!!!*/
 .side-nav > img,
 .side-nav-top li span,
 .playlist,
 .side-nav-bottom span,
-.playing div:last-of-type,
 .volume i,
 .home > div > div > div i,
 .overlay,
-.overlay i{
+.overlay i,
+.playing div:last-of-type i:last-of-type{
     display: none;
 }
 
-/* MEDIA */
+/*!!!!!!!!!!!!!!!!!!!!!!! MEDIA !!!!!!!!!!!!!!!!!!!!!!!!!*/
 @media screen and (min-width: 425px) and (max-width: 755px){
     .side-nav{
         width: 35vw;
@@ -492,26 +506,14 @@ main{
     .artists span{
         font-size: 0.65rem;
     }
-    
-    .player-menu > div:nth-of-type(3){
-        flex-basis: 10%;
-    }
-    
-    .player-menu > div:nth-of-type(3) i{
-        padding-right: 1.5em;
-    }
 
-    .playing{
-        flex-basis: 25%;
-        margin-right: 0;
-    }
-
-    .song-details span:first-of-type{
-        font-size: 1rem;
-    }
-
+    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
     .song-details{
-        margin: 0 1.5em 0 0;
+        padding-left: 0.3em;
+    }
+    
+    .song-details span:first-of-type{
+        font-size: 0.75rem;
     }
     
     .song-details span:nth-of-type(2),
@@ -519,35 +521,43 @@ main{
         font-size: 0.55rem;
     }
     
-    .playing img{
-        width: 50%;
-        margin: 1em 0em 0 1.5em;
+    .playing div:last-of-type{
+        font-size: 0.8rem;
     }
     
-    .player{
-        flex-basis: 60%;
+    .playing div:last-of-type i{
+        padding-bottom: 1.8em;
     }
-
-    .player > div:first-of-type {
-        justify-content: space-evenly;
+    
+    .player > div:last-of-type span{
+        font-size: 0.6rem;
     }
-
+    
     .fa-shuffle,
     .fa-backward-step,
     .fa-forward-step,
     .fa-rotate-right,
     .fa-list-ul,
     .fa-tv{
-        font-size: 0.85rem;
+        font-size: 1.2rem;
     }
-
+    
     .fa-circle-play{
-        font-size: 1.6rem;
-        vertical-align: middle;
+        font-size: 1.8rem;
     }
-
+    
     .progress-bar{
-        width: 40%;
+        width: 30%;
+    }
+    
+    .player-menu > div:nth-of-type(3){
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .player-menu > div:nth-of-type(3) i:last-of-type{
+        padding-top: 0em;
+        padding-left: 1.5em;
     }
 }
 
@@ -700,78 +710,62 @@ main{
         font-size: 0.7rem;
     }
     
-    .player-menu > div:nth-of-type(3){
-        flex-basis: 20%;
-        display: flex;
+    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    .song-details{
+        padding-left: 0em;
     }
-
-    .player-menu > div:nth-of-type(3) i{
-        margin-bottom: 0em;
-        padding-right: 1.6em;
-    }
-    
-    .playing{
-        flex-basis: 25%;
-    }
-
-    /* .playing div:last-of-type{
-        display: unset;
-        font-size: 1em;
-        margin-right: 2em;
-        margin-top: 1.2em;
-    } */
     
     .song-details span:first-of-type{
-        font-size: 1.1rem;
-    }
-
-    .song-details{
-        margin: 1em 1.5em 1em 0;
+        font-size: 0.9rem;
     }
     
     .song-details span:nth-of-type(2),
     .song-details span:last-of-type{
         font-size: 0.65rem;
     }
+
+    .playing{
+        padding-left: 0.8em;
+    }
     
-    .playing img{
-        width: 50%;
-        margin: 0.7em 0em 0 1.5em;
+    .playing div:last-of-type{
+        font-size: 0.9rem;
     }
     
-    .player{
-        flex-basis: 70%;
+    .playing div:last-of-type i{
+        padding-bottom: 1.8em;
+        padding-right: 2em;
     }
-
-    .player > div:first-of-type{
-        justify-content: space-around;
-        align-items: center;
-        margin-bottom: 0.7em;
+    
+    .player > div:last-of-type span{
+        font-size: 0.65rem;
     }
-
-    .player span{
-        flex-basis: calc(15% - 1.5em);
-    }
-
-    .player span:first-of-type{
-        margin-right: -4em;
-    }
-
-    .progress-area{
-        flex-basis: 80%;
-    }
-
+    
     .fa-shuffle,
     .fa-backward-step,
     .fa-forward-step,
     .fa-rotate-right,
     .fa-list-ul,
     .fa-tv{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
-
+    
     .fa-circle-play{
-        font-size: 1.8rem;
+        font-size: 1.9rem;
+    }
+    
+    .progress-bar{
+        width: 30%;
+    }
+    
+    .player-menu > div:nth-of-type(3){
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .player-menu > div:nth-of-type(3) i:last-of-type{
+        padding-top: 0em;
+        padding-left: 2em;
     }
 }
 
@@ -963,94 +957,82 @@ main{
         height: 88vh;
     }
 
-    .player-menu{
-        width: 100%;
-        height: 12vh;
-        justify-content: space-between;
-    }
-    
-    .player-menu > div:nth-of-type(3){
-        flex-basis: 10%;
-        display: flex;
-        justify-content: unset;
-    }
-
-    .player-menu > div:nth-of-type(3) i{
-        padding-left: 2em;
-    }
-
-    /* QUI     */
     .playing{
-        flex-basis: 15%;
+        flex-basis: 25%;
     }
 
-    .song-details span:first-of-type{
-        font-size: 1.1rem;
+    .playing img{
+        width: 50%;
+    }
+
+    .player-menu{
+        height: 12vh;
     }
 
     .song-details{
-        margin: 1em 1.5em 1em 0;
+        padding-left: 0em;
+    }
+    
+    .song-details span:first-of-type{
+        font-size: 1rem;
     }
     
     .song-details span:nth-of-type(2),
     .song-details span:last-of-type{
-        font-size: 0.65rem;
-    }
-    
-    .playing img{
-        width: 50%;
-        margin: 0.9em 0em 0 2em;
+        font-size: 0.7rem;
     }
 
-    /* .playing div:last-of-type{
-        display: unset;
-        font-size: 1em;
-        margin-right: 2em;
-        margin-top: 1.2em;
-    } */
+    .playing{
+        padding-left: 1em;
+    }
     
+    .playing div:last-of-type{
+        font-size: 0.9rem;
+    }
+    
+    .playing div:last-of-type i{
+        padding-bottom: 1.8em;
+        padding-right: 3em;
+    }
+
     .player{
-        flex-basis: 60%;
+        flex-basis: 50%;
     }
-
-    .player > div:first-of-type{
-        justify-content: space-evenly;
-        align-items: center;
-        margin-bottom: 0.7em;
+    
+    .player > div:last-of-type span{
+        font-size: 0.7rem;
     }
-
-    .player span{
-        flex-basis: calc(15% - 1.5em);
-    }
-
-    /* QUI */
-    .player span:first-of-type{
-        margin-right: -4em;
-    }
-
-    .player span:last-of-type{
-        margin-left: -6.8em;
-    }
-
-    .progress-area{
-        flex-basis: 80%;
-    }
-
+    
     .fa-shuffle,
     .fa-backward-step,
     .fa-forward-step,
     .fa-rotate-right,
     .fa-list-ul,
     .fa-tv{
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
-
+    
     .fa-circle-play{
-        font-size: 1.8rem;
+        font-size: 2rem;
+    }
+    
+    .progress-bar{
+        width: 30%;
+    }
+    
+    .player-menu > div:nth-of-type(3){
+        flex-basis: 12.5%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .player-menu > div:nth-of-type(3) i:last-of-type{
+        padding-top: 0em;
+        padding-left: 2em;
     }
 
     .volume{
-        flex-basis: 13%;
+        flex-basis: 12.5%;
         margin: 0 1em 0 1.5em;
         display: flex;
         align-items: center;

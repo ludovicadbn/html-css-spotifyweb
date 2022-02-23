@@ -30,6 +30,7 @@ i{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 
 }
 
@@ -71,7 +72,7 @@ main{
 
 .upgrade{
     background-color: rgba(0, 0, 0, 0.5);
-    height: 10%;
+    height: 7%;
     position: fixed;
     top: 0;
     right: 0;
@@ -86,7 +87,7 @@ main{
     border: 1px solid #fff;
     border-radius: 15px;
     padding: 1em 2.5em;
-    margin-right: 5px;
+    margin-right: 0.8em;
     text-transform: uppercase;
     font-size: 0.5rem;
     font-weight: 700;
@@ -190,18 +191,16 @@ main{
     background-color: #282828;
     display: flex;
     align-items: center;
-    justify-content: center;
-    z-index: 100;
 }
 
-.player-menu > div:last-of-type{
+.player-menu > div:nth-of-type(3){
     flex-basis: 25%;
     display: flex;
     justify-content: center;
 }
 
-.player-menu > div:last-of-type i:last-of-type{
-    margin-left: 0.7em;
+.player-menu > div:nth-of-type(3) i:last-of-type{
+    padding-left: 1em;
 }
 
 .playing{
@@ -338,8 +337,13 @@ main{
 
     .side-nav > img{
         display: unset;
-        margin: 1em 30% 1.5em 0;
-        height: 4.5vh;
+        margin: 1em 30% 1.5em 0.8em;
+        height: 5%;
+    }
+
+    .side-nav-top{
+        height: 15%;
+        overflow-y: auto;
     }
 
     .side-nav-top li:first-of-type{
@@ -375,7 +379,7 @@ main{
         color: #fff;
         width: 80%;
         margin: 0 10% 0 3vw;
-        height: 50vh;
+        height: 60%;
     }
 
     .playlist h2{
@@ -406,6 +410,14 @@ main{
         margin: 0.2em 0;
         font-size: 0.8rem;
     }
+
+    .side-nav-bottom{
+        height: 15%;
+    }
+
+    .side-nav-bottom li:first-of-type{
+        padding-left: 0.5em;
+    }    
     
     .side-nav-bottom li:first-of-type a{
         color: #686a70;
@@ -438,7 +450,7 @@ main{
     }
 
     .section-menu{
-        margin-top: 18%;
+        margin-top: 20%;
     }
     
     .section-menu ul li{
@@ -479,20 +491,21 @@ main{
         font-size: 0.65rem;
     }
     
-    .player-menu > div:last-of-type{
-        flex-basis: 20%;
+    .player-menu > div:nth-of-type(3){
+        flex-basis: 10%;
     }
     
     .playing{
-        flex-basis: 30%;
+        flex-basis: 25%;
+        margin-right: 0;
     }
-    
+
     .song-details span:first-of-type{
         font-size: 1rem;
     }
 
     .song-details{
-        margin: 1em 1.5em 1em 0;
+        margin: 0 1.5em 0 0;
     }
     
     .song-details span:nth-of-type(2),
@@ -506,7 +519,11 @@ main{
     }
     
     .player{
-        flex-basis: 50%;
+        flex-basis: 60%;
+    }
+
+    .player > div:first-of-type {
+        justify-content: space-evenly;
     }
 
     .fa-shuffle,

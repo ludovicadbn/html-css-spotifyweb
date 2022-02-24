@@ -810,6 +810,7 @@ main{
 
     .side-nav-top{
         margin-bottom: 1em;
+        overflow-y: auto;
     }
     
     .side-nav-top li span{

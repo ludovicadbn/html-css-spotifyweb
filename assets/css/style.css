@@ -980,10 +980,11 @@ main{
 
     .playing{
         flex-basis: 25%;
+        justify-content: space-around;
     }
 
     .playing div:first-of-type{
-        flex-basis: 40%;
+        flex-basis: 25%;
     }
 
     .playing img{
@@ -992,7 +993,7 @@ main{
 
     .song-details{
         padding-left: 0em;
-        flex-basis: 35%;
+        flex-basis: 25%;
         padding-right: 1em;
     }
     
@@ -1017,7 +1018,7 @@ main{
     
     .playing div:last-of-type i{
         padding-bottom: 1.8em;
-        padding-right: 1.5em;
+        padding-right: 1em;
     }
 
     .playing div:last-of-type i:last-of-type{

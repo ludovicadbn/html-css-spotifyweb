@@ -974,20 +974,25 @@ main{
         height: 88vh;
     }
 
-    .playing{
-        flex-basis: 25%;
-    }
-
-    .playing img{
-        width: 50%;
-    }
-
     .player-menu{
         height: 12vh;
     }
 
+    .playing{
+        flex-basis: 25%;
+    }
+
+    .playing div:first-of-type{
+        flex-basis: 20%;
+    }
+
+    .playing img{
+        width: 70%;
+    }
+
     .song-details{
         padding-left: 0em;
+        flex-basis: 25%;
     }
     
     .song-details span:first-of-type{
@@ -1001,23 +1006,40 @@ main{
 
     .playing{
         padding-left: 1em;
+        flex-basis: 20%;
     }
     
     .playing div:last-of-type{
-        font-size: 0.9rem;
+        font-size: 1.1rem;
+        flex-direction: row;
     }
     
     .playing div:last-of-type i{
         padding-bottom: 1.8em;
-        padding-right: 3em;
+        padding-right: 2em;
+    }
+
+    .playing div:last-of-type i:last-of-type{
+        display: unset;
     }
 
     .player{
-        flex-basis: 50%;
+        flex-basis: 60%;
+    }
+
+    .player > div:last-of-type{
+        padding-top: 1.5em;
     }
     
     .player > div:last-of-type span{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+        width: 6%;
+    }
+
+    .player > div:last-of-type span:first-of-type{
+        padding-right: unset;
     }
     
     .fa-shuffle,
@@ -1026,11 +1048,15 @@ main{
     .fa-rotate-right,
     .fa-list-ul,
     .fa-tv{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
     
     .fa-circle-play{
-        font-size: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .progress-area{
+        width: 88%;
     }
     
     .progress-bar{
@@ -1038,7 +1064,7 @@ main{
     }
     
     .player-menu > div:nth-of-type(3){
-        flex-basis: 12.5%;
+        flex-basis: 10%;
         flex-direction: row;
         justify-content: center;
     }
@@ -1049,7 +1075,7 @@ main{
     }
 
     .volume{
-        flex-basis: 12.5%;
+        flex-basis: 10%;
         margin: 0 1em 0 1.5em;
         display: flex;
         align-items: center;

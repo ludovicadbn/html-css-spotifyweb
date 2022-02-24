@@ -983,7 +983,7 @@ main{
     }
 
     .playing div:first-of-type{
-        flex-basis: 20%;
+        flex-basis: 40%;
     }
 
     .playing img{
@@ -992,7 +992,8 @@ main{
 
     .song-details{
         padding-left: 0em;
-        flex-basis: 25%;
+        flex-basis: 35%;
+        padding-right: 1em;
     }
     
     .song-details span:first-of-type{
@@ -1016,7 +1017,7 @@ main{
     
     .playing div:last-of-type i{
         padding-bottom: 1.8em;
-        padding-right: 2em;
+        padding-right: 1.5em;
     }
 
     .playing div:last-of-type i:last-of-type{
@@ -1028,7 +1029,7 @@ main{
     }
 
     .player > div:last-of-type{
-        padding-top: 1.5em;
+        padding-top: 1em;
     }
     
     .player > div:last-of-type span{
@@ -1067,11 +1068,12 @@ main{
         flex-basis: 10%;
         flex-direction: row;
         justify-content: center;
+        padding-left: 0.5em;
     }
     
     .player-menu > div:nth-of-type(3) i:last-of-type{
         padding-top: 0em;
-        padding-left: 2em;
+        padding-left: 1.5em;
     }
 
     .volume{

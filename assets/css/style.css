@@ -976,6 +976,7 @@ main{
 
     .player-menu{
         height: 12vh;
+        width: 100%;
     }
 
     .playing{

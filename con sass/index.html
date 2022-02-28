@@ -6,41 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="./assets/img/favicon.ico">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Spotify</title>
 </head>
 <body>
     
     <div class="container-flex">
         <div class="side-nav">
-            <img src="./assets/img/logo.svg" alt="">
-            <ul class="side-nav-top">
-                <li><a href="#">
-                    <img src="./assets/img/logo-small.svg" alt="logo spotify">
+            <img class="logo-big" src="../assets/img/logo.svg" alt="">
+            <ul class="side-nav__top">
+                <li class="logo-small"><a href="#">
+                    <img class="side-nav__img-top" src="../assets/img/logo-small.svg" alt="logo spotify">
                 </a></li>
                 <li><a href="#">
-                    <img src="./assets/img/home.svg" alt="home button">
+                    <img class="side-nav__img-top" src="../assets/img/home.svg" alt="home button">
                     <span>Home</span>
                 </a></li>
                 <li><a href="#">
-                    <img src="./assets/img/search.svg" alt="search button">
+                    <img class="side-nav__img-top" src="../assets/img/search.svg" alt="search button">
                     <span>Cerca</span>
                 </a></li>
                 <li><a href="#">
-                    <img src="./assets/img/libreria.svg" alt="library button">
+                    <img class="side-nav__img-top" src="../assets/img/libreria.svg" alt="library button">
                     <span>La tua libreria</span>
                 </a></li>
             </ul>
             <div class="playlist">
-                <h2>playlist</h2>
+                <h2 class="playlist__title">playlist</h2>
                 <div>
                     <a href="#">
                         <i class="fa-solid fa-square-plus"></i>
-                        <span>Crea Playlist</span>
+                        <span class="playlist__add">Crea Playlist</span>
                     </a>
                 </div>
-                <div class="playlist-list">
+                <div class="playlist__list">
                     <ul>
                         <li><a href="#"><div>Nome Playlist</div></a></li>
                         <li><a href="#"><div>Nome Playlist</div></a></li>
@@ -52,167 +52,167 @@
                     </ul>
                 </div>
             </div>
-            <ul class="side-nav-bottom">
+            <ul class="side-nav__bottom">
                 <li><a href="#">
                     <i class="fa-solid fa-circle-arrow-down"></i>
                     <span>Installa app</span>
                 </a></li>
                 <li><a href="#">
-                    <img src="./assets/img/profile.svg" alt="profile image">
+                    <img class="side-nav__img-bottom" src="../assets/img/profile.svg" alt="profile image">
                     <span>John Doe</span>
                 </a></li>
             </ul>
         </div>
         <main>
             <div class="upgrade">
-                <a href="#"><span>effettua l'upgrade</span></a>
+                <a href="#"><span class="upgrade__content">effettua l'upgrade</span></a>
             </div>
             <div class="upgrade-block"></div>
             <div class="section-menu">
-                <ul>
-                    <li><a href="#">in evidenza</a></li>
-                    <li><a href="#">podcast</a></li>
-                    <li><a href="#">classifiche</a></li>
-                    <li><a href="#">generi e mood</a></li>
-                    <li><a href="#">nuove uscite</a></li>
-                    <li><a href="#">scopri</a></li>
+                <ul class="section-menu__list">
+                    <li class="section-menu__list-item"><a class="section-menu__list-item-text" href="#">in evidenza</a></li>
+                    <li class="section-menu__list-item"><a class="section-menu__list-item-text" href="#">podcast</a></li>
+                    <li class="section-menu__list-item"><a class="section-menu__list-item-text" href="#">classifiche</a></li>
+                    <li class="section-menu__list-item"><a class="section-menu__list-item-text" href="#">generi e mood</a></li>
+                    <li class="section-menu__list-item"><a class="section-menu__list-item-text" href="#">nuove uscite</a></li>
+                    <li class="section-menu__list-item"><a class="section-menu__list-item-text" href="#">scopri</a></li>
                 </ul>
             </div>
             <div class="home">
-                <div class="history">
-                    <h2>recently played</h2>
-                    <div>
+                <div class="home__history">
+                    <h2 class="home__title mb-1">recently played</h2>
+                    <div class="home__item">
                         <div>
-                            <img src="./assets/img/metal_lifting.jpg" alt="heavy metal playlist">
+                            <img class="home__img" src="../assets/img/metal_lifting.jpg" alt="heavy metal playlist">
                             <div class="overlay">
                                 <i class="fa-solid fa-circle-play"></i>
                             </div>
                         </div>
-                        <div>heavy metal</div>
+                        <div class="item-title">heavy metal</div>
                         <span>subtitle</span>
                     </div>
-                    <div>
+                    <div class="home__item">
                         <div>
-                            <img src="./assets/img/stranger.jpeg" alt="stranger things playlist">
+                            <img class="home__img" src="../assets/img/stranger.jpeg" alt="stranger things playlist">
                             <div class="overlay">
                                 <i class="fa-solid fa-circle-play"></i>
                             </div>
                         </div>
-                        <div>stranger things, vol. 1(a netflix original series soundtrack)</div>
+                        <div class="item-title">stranger things, vol. 1(a netflix original series soundtrack)</div>
                         <span>kyle dixon &amp; michael stain</span>
                     </div>
-                    <div>
+                    <div class="home__item">
                         <div>
-                            <img src="./assets/img/aquietplace.jpeg" alt="a quiet place playlist">
+                            <img class="home__img" src="../assets/img/aquietplace.jpeg" alt="a quiet place playlist">
                             <div class="overlay">
                                 <i class="fa-solid fa-circle-play"></i>
                             </div>
                         </div>
-                        <div>a quite place</div>
+                        <div class="item-title">a quite place</div>
                         <span>subtitle</span>
                     </div>
-                    <div>
+                    <div class="home__item">
                         <div>
-                            <img src="./assets/img/split.jpeg" alt="split playlist">
+                            <img class="home__img" src="../assets/img/split.jpeg" alt="split playlist">
                             <div class="overlay">
                                 <i class="fa-solid fa-circle-play"></i>
                             </div>
                         </div>
-                        <div>split</div>
+                        <div class="item-title">split</div>
                         <span>subtitle</span>
                     </div>
-                    <div>
+                    <div class="home__item">
                         <div>
-                            <img src="./assets/img/cure.jpeg" alt="a cure for wellness playlist">
+                            <img class="home__img" src="../assets/img/cure.jpeg" alt="a cure for wellness playlist">
                             <div class="overlay">
                                 <i class="fa-solid fa-circle-play"></i>
                             </div>
                         </div>
-                        <div>a cure for wellness</div>
+                        <div class="item-title">a cure for wellness</div>
                         <span>subtitle</span>
                     </div>
-                    <div>
+                    <div class="home__item">
                         <div>
-                            <img src="./assets/img/sinister.jpeg" alt="sinister playlist">
+                            <img class="home__img" src="../assets/img/sinister.jpeg" alt="sinister playlist">
                             <div class="overlay">
                                 <i class="fa-solid fa-circle-play"></i>
                             </div>
                         </div>
-                        <div>sinister</div>
+                        <div class="item-title">sinister</div>
                         <span>subtitle</span>
                     </div>
                 </div>
-                <div class="for-you">
-                    <h2>creato per john doe</h2>
-                    <span>Più ascolti, più accurati saranno i suggerimenti.</span>
-                    <div>
+                <div class="home__for-you">
+                    <h2 class="home__title">creato per john doe</h2>
+                    <span class="home__subtitle">Più ascolti, più accurati saranno i suggerimenti.</span>
+                    <div class="home__item">
                         <div>
-                            <img src="./assets/img/radar.jpeg" alt="radar playlist">
+                            <img class="home__img" src="../assets/img/radar.jpeg" alt="radar playlist">
                             <div class="overlay">
                                 <i class="fa-solid fa-circle-play"></i>
                             </div>
                         </div>
-                        <div>release radar</div>
+                        <div class="item-title">release radar</div>
                     </div>
-                    <div>
+                    <div class="home__item">
                         <div>
-                            <img src="./assets/img/mixdaily.jpeg" alt="daily mix 1 playlist">
+                            <img class="home__img" src="../assets/img/mixdaily.jpeg" alt="daily mix 1 playlist">
                             <div class="overlay">
                                 <i class="fa-solid fa-circle-play"></i>
                             </div>
                         </div>
-                        <div>daily mix 1</div>
+                        <div class="item-title">daily mix 1</div>
                     </div>
                 </div>
-                <div class="artists">
-                    <h2>artisti più popolari</h2>
-                    <span>Più ascolti, più accurati saranno i suggerimenti.</span>
-                    <div>
+                <div class="home__artists">
+                    <h2 class="home__title">artisti più popolari</h2>
+                    <span class="home__subtitle">Più ascolti, più accurati saranno i suggerimenti.</span>
+                    <div class="home__item">
                         <div>
-                            <img src="./assets/img/youg.jpeg" alt="lana del rey">
+                            <img class="home__img" src="../assets/img/youg.jpeg" alt="lana del rey">
                             <div class="overlay">
                                 <i class="fa-solid fa-circle-play"></i>
                             </div>
                         </div>
-                        <div>lana del ray</div>
+                        <div class="item-title rounded">lana del ray</div>
                     </div>
-                    <div>
+                    <div class="home__item">
                         <div>
-                            <img src="./assets/img/einaudi.jpeg" alt="ludovico einaudi">
+                            <img class="home__img" src="../assets/img/einaudi.jpeg" alt="ludovico einaudi">
                             <div class="overlay">
                                 <i class="fa-solid fa-circle-play"></i>
                             </div>
                         </div>
-                        <div>ludovico einaudi</div>
+                        <div class="item-title rounded">ludovico einaudi</div>
                     </div>
                 </div>
             </div>
         </main>
     </div>
     <div class="player-menu">
-        <div class="playing">
-            <div>
-                <img src="./assets/img/sinister.jpeg" alt="sinister playing">
+        <div class="player-menu__playing">
+            <div class="playing-img-div">
+                <img class="playing-img" src="../assets/img/sinister.jpeg" alt="sinister playing">
             </div>
             <div class="song-details">
                 <span>Sinister</span>
                 <span>Brano</span>
                 <span>Nome</span>
             </div>
-            <div>
+            <div class="playing-buttons">
                 <i class="fa-solid fa-heart"></i>
                 <i class="fa-solid fa-folder"></i>
             </div>
         </div>
-        <div class="player">
-            <div>
+        <div class="player-menu__player">
+            <div class="player-buttons">
                 <a href="#"><i class="fa-solid fa-shuffle"></i></a>
                 <a href="#"><i class="fa-solid fa-backward-step"></i></a>
                 <a href="#"><i class="fa-solid fa-circle-play"></i></a>
                 <a href="#"><i class="fa-solid fa-forward-step"></i></a>
                 <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
             </div>
-            <div>
+            <div class="player-progress-bar">
                 <span>0:25</span>
                 <div class="progress-area">
                     <div class="progress-bar"></div>
@@ -220,11 +220,11 @@
                 <span>4:35</span>
             </div>
         </div>
-        <div>
+        <div class="player-menu__smart-functions">
             <i class="fa-solid fa-list-ul"></i>
             <i class="fa-solid fa-tv"></i>
         </div>
-        <div class="volume">
+        <div class="player-menu__volume">
             <i class="fa-solid fa-volume-high"></i>
             <div class="volume-bar">
                 <div class="volume-range"></div>
